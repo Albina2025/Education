@@ -1,0 +1,66 @@
+.baner {
+  max-width: 1440px;
+  position: relative;
+  height: 790px;
+  margin: 0 auto;
+  background-image: url("../images/baner.png");
+}
+
+.baner-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+  max-width: 800px;
+}
+
+.hero-content h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.hero-content p {
+  margin-bottom: 30px;
+}
+
+.btn {
+  padding: 14px 28px;
+  background: #3b82f6;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.stats {
+  position: absolute;
+  bottom: -70px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  background: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 80px;
+  padding: 40px 60px;
+  border-radius: 12px;
+  -webkit-box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+          box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.stat-item {
+  text-align: center;
+}
+
+.stat-item h3 {
+  font-size: 32px;
+  color: #000;
+}
+
+.stat-item p {
+  color: #3b82f6;
+}
