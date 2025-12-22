@@ -1,14 +1,14 @@
 .baner
     max-width: 1440px
     position: relative
-    height: 790px
     margin: 0 auto
-    background-image: url("../images/baner.png")
+
+.image
+    height: 790px
+    background-image: url("../images/home/baner.png")
     background-size: cover
     background-position: center
     background-repeat: no-repeat
-
-//----------//
 
 .baner-content 
     width: 100%
@@ -61,27 +61,196 @@
 //------------//
 
 .stats 
-  position: absolute
-  bottom: -70px
-  left: 50%
-  transform: translateX(-50%)
-  background: #fff
-  display: flex
-  gap: 80px
-  padding: 40px 60px
-  border-radius: 12px
-  box-shadow: 0 10px 30px rgba(0,0,0,0.15)
+    width: 1152px
+    position: absolute
+    margin: -43px auto 0
+    background: #DDEEFE
+    display: flex
+    justify-content: space-between
+    align-items: center
+    gap: 36px
+    padding: 56px 139px
+    border-radius: 4px
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15)
+    position: relative
+    z-index: 5
 
+
+.stats-box
+    max-width: 229px
+    display: flex
+    gap: 24px
+    padding: 0
+
+.img
+    width: 72px
+    height: 72px
+    margin: 4px 0
 
 .stat-item 
-  text-align: center
+    display: flex
+    flex-direction: column
+    gap: 8px
+    text-align: center
 
 
-.stat-item h3 
-  font-size: 32px
-  color: #000
+    h3 
+        font-size: 36px
+        line-height: 47px
+        color: rgba(34, 34, 34, 1)
 
 
-.stat-item p 
-  color: #3b82f6
+    p 
+        color: rgba(8, 108, 249, 1)
+        font-size: 16px
+        Online Courses
 
+
+
+/*-----sectin2-----*/
+
+.banner2
+    max-width: 1152px
+    margin-top: 134px
+    
+
+.about
+    width: 100%
+    display: flex
+    gap: 38px
+    
+
+
+.about-left
+    margin: 0
+    max-width: 519px
+    display: flex
+    flex-direction: column
+    justify-content: flex-start
+    align-items: flex-start
+    gap: 23px
+
+.left-top
+    display: flex
+    flex-direction: column
+    justify-content: flex-start
+    align-items: flex-start
+    gap: 16px
+
+    h1
+        font-size: 48px
+        line-height: 62px
+
+    p
+        font-size: 16px
+        line-height: 155%
+
+
+.btn2
+    width: 149px
+    height: 56px
+    margin: 0
+    border-radius: 4px
+    background: rgba(8, 108, 249, 1)
+    color: rgba(255, 255, 255, 1)
+    padding: 16px 32px
+    border: none
+    font-size: 16px
+    line-height: 24px
+    
+
+.about-right
+    position: relative
+    width: 595px
+    object-fit: contain
+
+    .image1
+        height: 433px
+        background-image: url("../images/home/course.png")
+        background-size: cover
+        background-position: center
+        background-repeat: no-repeat
+
+
+    img
+        position: absolute
+        width: 80px
+        height: 80px
+        top: 40%
+        left: 43%
+
+
+
+/*-----service------*/
+
+.service 
+    width: 100%
+    text-align: center
+    margin-top: 134px
+
+    
+    &-header 
+        max-width: 520px
+        margin: 0 auto 60px
+        display: flex
+        flex-direction: column
+        gap: 12px
+
+        h1 
+            font-size: 48px
+            line-height: 62px
+            color: #222
+        
+
+        p 
+            font-size: 16px
+            line-height: 155%
+            color: #555
+        
+    
+
+
+    &-grid 
+        max-width: 1152px
+        margin: 0 auto
+        display: grid
+        grid-template-columns: repeat(4, 1fr)
+        gap: 53px
+        padding: 0
+    
+
+    
+    &-card 
+        width: 248px
+        display: flex
+        flex-direction: column
+        align-items: center
+        gap: 16px
+
+        &-item
+            display: flex
+            flex-direction: column
+            align-items: center
+
+            img 
+                width: 80px
+                height: 80px
+            
+
+            h3 
+                font-size: 24px
+                font-weight: 600
+                line-height: 31px
+                color: rgba(34, 34, 34, 1)
+            
+
+        p 
+            font-size: 14px
+            line-height: 155%
+            color: rgba(85, 85, 85, 1)
+        
+    
+        
+    
+
+                
