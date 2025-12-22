@@ -181,6 +181,7 @@
   width: 100%;
   text-align: center;
   margin-top: 134px;
+  /*------couese--------*/
 }
 .service-header {
   max-width: 520px;
@@ -233,4 +234,71 @@
   font-size: 14px;
   line-height: 155%;
   color: rgb(85, 85, 85);
+}
+
+.couese {
+  width: 100%;
+  background: rgb(211, 229, 254);
+  display: flax;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid red;
+}
+
+.couese-header {
+  width: 674px;
+  height: 124px;
+  text-align: center;
+}
+.couese-header-h1 {
+  font-size: 48px;
+  line-height: 62px;
+}
+.couese-header-p {
+  font-size: 16px;
+  line-height: 155%;
+}
+
+.couese-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.couese-card {
+  width: 370px;
+  padding: 24px;
+  border: 1px solid red;
+  border-radius: 6px;
+  background: rgb(255, 255, 255);
+}
+
+.card-in {
+  width: 322px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 20;
+}
+
+.couese-baner {
+  width: 100%;
+}
+.couese-baner img {
+  max-width: 320px;
+  border-radius: 6px;
+  height: 250px;
+}
+
+.title-price {
+  display: flex;
+  gap: 109px;
+}
+
+.couese-title {
+  width: 322px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
 }
