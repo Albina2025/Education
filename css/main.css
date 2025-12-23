@@ -61,11 +61,17 @@
   cursor: pointer;
 }
 
+.hero {
+  background: rgb(255, 255, 255);
+  width: 100%;
+  padding-bottom: 128px;
+}
+
 .stats {
   width: 1152px;
   position: absolute;
   margin: -43px auto 0;
-  background: #DDEEFE;
+  background: rgb(255, 255, 255);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -181,8 +187,8 @@
   width: 100%;
   text-align: center;
   margin-top: 134px;
-  /*------couese--------*/
 }
+
 .service-header {
   max-width: 520px;
   margin: 0 auto 60px;
@@ -200,6 +206,7 @@
   line-height: 155%;
   color: #555;
 }
+
 .service-grid {
   max-width: 1152px;
   margin: 0 auto;
@@ -208,6 +215,7 @@
   gap: 53px;
   padding: 0;
 }
+
 .service-card {
   width: 248px;
   display: flex;
@@ -215,16 +223,17 @@
   align-items: center;
   gap: 16px;
 }
-.service-card-item {
+.service-card .card-item {
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 24px;
 }
-.service-card-item img {
+.service-card .card-item img {
   width: 80px;
   height: 80px;
 }
-.service-card-item h3 {
+.service-card .card-item h3 {
   font-size: 24px;
   font-weight: 600;
   line-height: 31px;
@@ -239,47 +248,57 @@
 .couese {
   width: 100%;
   background: rgb(211, 229, 254);
-  display: flax;
+  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border: 1px solid red;
+}
+
+.couese .container {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  padding: 60px 0 168px 0;
 }
 
 .couese-header {
   width: 674px;
   height: 124px;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
 }
-.couese-header-h1 {
+.couese-header h1 {
   font-size: 48px;
   line-height: 62px;
 }
-.couese-header-p {
+.couese-header p {
   font-size: 16px;
   line-height: 155%;
+  color: rgb(85, 85, 85);
 }
 
 .couese-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  gap: 23px;
 }
 
 .couese-card {
   width: 370px;
   padding: 24px;
-  border: 1px solid red;
   border-radius: 6px;
   background: rgb(255, 255, 255);
 }
 
 .card-in {
-  width: 322px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-  gap: 20;
+  gap: 20px;
 }
 
 .couese-baner {
@@ -291,14 +310,150 @@
   height: 250px;
 }
 
-.title-price {
-  display: flex;
-  gap: 109px;
-}
-
 .couese-title {
-  width: 322px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   gap: 18px;
+}
+.couese-title p {
+  font-size: 14px;
+  line-height: 155%;
+  color: rgb(85, 85, 85);
+}
+
+.title-price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.title-price h3 {
+  margin: 0;
+  font-size: 24px;
+  line-height: 31px;
+  color: rgb(51, 51, 51);
+}
+.title-price span {
+  margin: 0;
+  font-size: 24px;
+  line-height: 31px;
+  color: rgb(8, 108, 249);
+}
+
+.couese-btn {
+  width: 182px;
+  height: 56px;
+  background: rgb(8, 108, 249);
+  border-radius: 6px;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+  line-height: 24px;
+  border: none;
+  margin: auto;
+  display: block;
+}
+
+/*---------*/
+.event {
+  padding: 128px 0;
+  width: 100%;
+  background: #fff;
+}
+
+.event-header {
+  max-width: 520px;
+  margin: 0 auto 48px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.event-header h1 {
+  font-size: 48px;
+  line-height: 62px;
+  color: rgb(34, 34, 34);
+}
+.event-header p {
+  font-size: 16px;
+  line-height: 155%;
+  color: rgb(85, 85, 85);
+}
+
+.event-grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.event-card {
+  max-width: 368px;
+  border-radius: 10px;
+  overflow: hidden;
+  background: #f5f5f5;
+}
+
+.event-image {
+  position: relative;
+}
+.event-image img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+.event-badge {
+  position: absolute;
+  padding: 8px 12px;
+  top: 0;
+  left: 0;
+  width: 65px;
+  eight: 62px;
+  background: #4c8bf5;
+  color: #fff;
+  font-size: 18px;
+  line-height: 23px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-weight: 500;
+}
+
+.event-body {
+  width: 319px;
+  padding: 0;
+  margin: 24px 24px 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.event-body h5 {
+  font-size: 20px;
+  line-height: 26px;
+  color: rgb(34, 34, 34);
+}
+
+.event-meta {
+  width: 321px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+  color: #555;
+  gap: 29px;
+}
+.event-meta span {
+  display: flex;
+  gap: 8px;
+  font-size: 14px;
+  line-height: 155%;
+  color: rgb(85, 85, 85);
+}
+.event-meta span img {
+  width: 16px;
+  height: 16px;
+  margin: 3px 0 3px 0;
 }
