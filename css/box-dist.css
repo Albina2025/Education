@@ -547,7 +547,7 @@ body {
   top: 0;
   left: 0;
   width: 65px;
-  eight: 62px;
+  height: 62px;
   background: #4c8bf5;
   color: #fff;
   font-size: 18px;
@@ -605,7 +605,7 @@ body {
   width: 1144px;
   display: flex;
   justify-content: space-between;
-  padding: 0;
+  padding-left: 0;
   gap: 92px;
 }
 
@@ -614,6 +614,7 @@ body {
   flex-direction: column;
   border: 2px solid red;
   align-items: flex-start;
+  text-align: left;
   gap: 24px;
 }
 .footer-div .h1 {
