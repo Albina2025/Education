@@ -1,127 +1,188 @@
-.footer
+.footer 
     width: 100%
+    max-width: 1440px
     background: rgba(211, 229, 254, 1)
-    padding: 60px 0 80px
+    margin: 0 auto
+    padding: 60px 148px 80px
 
-.footer-main
-    width: 1144px
+    @media (max-width: 1024px)
+        padding: 50px 100px 60px
+
+    @media (max-width: 768px)
+        padding: 50px 40px 60px
+
+    @media (max-width: 360px)
+        padding: 40px 20px 50px
+
+    
+
+.container
+    width: 100%
+    max-width: 1144px
+    margin: 0 auto
+
+
+.footer-content
+    width: 100%
     display: flex
-    justify-content: space-between
-    padding-left: 0
     gap: 92px
 
+    @media (max-width: 1024px)
+        flex-direction: column
+        gap: 70px
+
+    @media (max-width: 768px)
+        flex-direction: column
+        gap: 40px
 
 
+.social-media
+    width: 360px
+
+    @media (max-width: 1024px)
+        width: 300px
+    @media (max-width: 768px)
+        width: 100%
 
 
-.footer-div
-    display: flex
-    flex-direction: column
-    border: 2px solid red
-    align-items: flex-start
-    text-align: left
-    gap: 24px
-
-    .h1
-        font-size: 30px
-        
-        
-
-
-
-
-.footer-top
-    max-width: 360px
-    display: flex
-    flex-direction: column
-    justify-content: flex-start
-    align-items: flex-start
-    gap: 32px
-
-    .h1
+    h3
         font-size: 30px
         line-height: 39px
+        color: rgba(34, 34, 34, 1)
+        margin-bottom: 24px
 
-.title
-    display: flex
-    flex-direction: column
-    gap: 24px
-    justify-content: flex-start
-    align-items: flex-start
+    
+    a
+        color: rgba(85, 85, 85, 1)
+        font-size: 16px
+        line-height: 155%
+        display: block
+        text-decoration: none
+        margin-bottom: 32px
 
-    .h1
+        &:hover
+            color: blue
+
+
+.img-grid
+    display: grid
+    grid-template-columns: repeat(4, 48px)
+    gap: 16px
+
+    @media (max-width: 768px)
+        grid-template-columns: repeat(4, 1fr)
+        gap: 12px
+
+
+    img
+        width: 48px
+        height: 48px
+        padding: 14px
+        border-radius: 4px
+        background: rgba(255, 255, 255, 1)
+
+
+.Links
+    width: 190px
+
+    @media (max-width: 1024px)
+        width: 160px
+    @media (max-width: 768px)
+        width: 100%
+    
+
+    h3
         font-size: 30px
         line-height: 39px
+        color: rgba(34, 34, 34, 1)
+        margin-bottom: 24px
 
-    .p
+    a 
+        display: block
+        text-decoration: none
+        color: rgba(85, 85, 85, 1)
+        font-size: 16px
+        line-height: 155%
+        margin-bottom: 16px
+
+        &:hover
+            color: blue
+
+        &-links-svg
+            right: 8px
+            left: 0
+            top: 55%
+            right: 8px
+            transform: translateY(-50%)
+            width: 16px
+            height: 16px
+
+
+.Support
+    width: 116px
+
+    @media (max-width: 1024px)
+        width: 140px
+    @media (max-width: 768px)
+        width: 100%
+
+    h3
+        font-size: 30px
+        line-height: 39px
+        color: rgba(34, 34, 34, 1)
+        margin-bottom: 24px
+
+    a 
+        display: block
+        text-decoration: none
+        margin-bottom: 16px
         color: rgba(85, 85, 85, 1)
         font-size: 16px
         line-height: 155%
 
-.footer-bottom
-    display: flex
-    gap: 16px
-    justify-content: flex-start
-    align-items: flex-start
+        &:hover
+            color: blue
 
-.images
-    display: flex
-    max-width: 48px
-    max-height: 48px
-    padding: 14px
-    border-radius: 4px
-    background: rgba(255, 255, 255, 1)
+        &-links-svg
+            right: 8px
+            left: 0
+            top: 55%
+            transform: translateY(-50%)
+            width: 16px
+            height: 16px
 
 
+.Contact-Us
+    width: 203px
+
+    @media (max-width: 1024px)
+        width: 180px
+    @media (max-width: 768px)
+        width: 100%
+
+    h3
+        font-size: 30px
+        line-height: 39px
+        color: rgba(34, 34, 34, 1)
+        margin-bottom: 24px
+
+    a 
+        color: rgba(85, 85, 85, 1)
+        font-size: 16px
+        line-height: 155%
+        display: block
+        text-decoration: none
+        margin-bottom: 16px
+
+        &:hover
+            color: blue
 
 
-.footer-list
-    list-style: none
-    padding: 0
-    margin: 0
-    display: flex
-    flex-direction: column
-    justify-content: flex-start
-    align-items: flex-start
-    gap: 16px
-
-    .li
-        display: flex
-        align-items: center
-        gap: 8px
-
-        .img
-            width: 20px
-            height: 20px
-
-        .a
-            font-size: 16px
-            line-height: 21px
-            text-decoration: none
-
-
-
-
-
-
-
-.contact-info
-    display: flex
-    flex-direction: column
-    gap: 16px
-
-.contact-item
-    display: flex
-    gap: 8px
-
-    .img
-        width: 20px
-        height: 20px
-
-
-    .a 
-        font-size: 16px 
-     
-
-
-        
+        &-links-svg
+            right: 8px
+            left: 0
+            top: 55%
+            right: 8px
+            transform: translateY(-50%)
+            width: 16px
+            height: 16px
