@@ -5,6 +5,14 @@
     width: 100%
     z-index: 10
 
+    
+
+    @media (max-width: 360px)
+        position: relative  
+        top: auto         
+        margin-bottom: 20px
+        
+        
    
 
 .header-inner 
@@ -13,12 +21,18 @@
     align-items: center
     height: 80px
     color: #fff
+    padding: 0 40px
 
     @media (max-width: 1024px)
-        margin: 0px 40px 
+        padding: 0 30px
 
-    @media (max-width: 768pxpx)
-        margin: 0px 20px
+    @media (max-width: 768px)
+        align-items: center
+        justify-content: space-between
+        gap: 0
+        height: auto
+        padding: 0 20px
+        background: rgba(255, 255, 255, 1)
     
 
 .logo 
@@ -27,20 +41,53 @@
     font-size: 24px
     font-weight: 700
     line-height: 31px
-    text-align: left
+    text-align: center
+
+    @media (max-width: 768px)
+        color: rgba(34, 34, 34, 1)
+
+
+.burger
+    display: none
+    flex-direction: column
+    justify-content: space-between
+    width: 17.66px
+    height: 14px
+    cursor: pointer
+
+    span
+        display: block
+        width: 100%
+        height: 4px        
+        border-radius: 21px
+        background: rgba(241, 85, 37, 1)
+
+    @media (max-width: 768px)
+        display: flex
+
 
 
 .links 
     display: flex
     gap: 40px
-    list-style: none
-    margin: 0
-    padding: 0
+    align-items: center
 
-    @media (max-width: 1200px)
+    @media (max-width: 1024px)
         gap: 30px
+
     @media (max-width: 768px) 
-        display: none
+        gap: 12px
+        display: flex
+        flex-direction: column
+        max-width: 320px
+        display: none    
+        
+
+    @media (max-width: 360px)
+        gap: 8px
+
+    .active
+        display: flex
 
 
 .link-a
@@ -52,8 +99,7 @@
     display: flex
     align-items: center
     gap: 8px 
-    
-    background-image: url("../images/info/icon.svg")
+    background-image: url("../images/icon/icon.svg")
     display: inline-block
     padding-right: 20px
     background-position: right center
@@ -62,7 +108,7 @@
 
     &:hover
         color: blue
-        background-image: url("../images/info/icon-blue.svg") 
+        background-image: url("../images/icon/icon-blue.svg") 
         
 
 

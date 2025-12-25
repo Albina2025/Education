@@ -5,6 +5,13 @@
   width: 100%;
   z-index: 10;
 }
+@media (max-width: 360px) {
+  .header {
+    position: relative;
+    top: auto;
+    margin-bottom: 20px;
+  }
+}
 
 .header-inner {
   display: flex;
@@ -12,15 +19,21 @@
   align-items: center;
   height: 80px;
   color: #fff;
+  padding: 0 40px;
 }
 @media (max-width: 1024px) {
   .header-inner {
-    margin: 0px 40px;
+    padding: 0 30px;
   }
 }
-@media (max-width: 768pxpx) {
+@media (max-width: 768px) {
   .header-inner {
-    margin: 0px 20px;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0;
+    height: auto;
+    padding: 0 20px;
+    background: rgb(255, 255, 255);
   }
 }
 
@@ -30,25 +43,61 @@
   font-size: 24px;
   font-weight: 700;
   line-height: 31px;
-  text-align: left;
+  text-align: center;
+}
+@media (max-width: 768px) {
+  .logo {
+    color: rgb(34, 34, 34);
+  }
+}
+
+.burger {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 17.66px;
+  height: 14px;
+  cursor: pointer;
+}
+.burger span {
+  display: block;
+  width: 100%;
+  height: 4px;
+  border-radius: 21px;
+  background: rgb(241, 85, 37);
+}
+@media (max-width: 768px) {
+  .burger {
+    display: flex;
+  }
 }
 
 .links {
   display: flex;
   gap: 40px;
-  list-style: none;
-  margin: 0;
-  padding: 0;
+  align-items: center;
 }
-@media (max-width: 1200px) {
+@media (max-width: 1024px) {
   .links {
     gap: 30px;
   }
 }
 @media (max-width: 768px) {
   .links {
+    gap: 12px;
+    display: flex;
+    flex-direction: column;
+    max-width: 320px;
     display: none;
   }
+}
+@media (max-width: 360px) {
+  .links {
+    gap: 8px;
+  }
+}
+.links .active {
+  display: flex;
 }
 
 .link-a {
@@ -60,7 +109,7 @@
   display: flex;
   align-items: center;
   gap: 8px;
-  background-image: url("../images/info/icon.svg");
+  background-image: url("../images/icon/icon.svg");
   display: inline-block;
   padding-right: 20px;
   background-position: right center;
@@ -69,5 +118,5 @@
 }
 .link-a:hover {
   color: blue;
-  background-image: url("../images/info/icon-blue.svg");
+  background-image: url("../images/icon/icon-blue.svg");
 }

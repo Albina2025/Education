@@ -23,13 +23,19 @@
 
 
 .footer-content
-    width: 100%
+    width: 100% 
     display: flex
     gap: 92px
+    box-sizing: border-box
+
+    @media (max-width: 1200px)
+        gap: 40px             // gap кичирейт
+        justify-content: flex-start
+
 
     @media (max-width: 1024px)
         flex-direction: column
-        gap: 70px
+        gap: 50px
 
     @media (max-width: 768px)
         flex-direction: column
@@ -38,6 +44,9 @@
 
 .social-media
     width: 360px
+    box-sizing: border-box    
+    flex: 1 1 auto            
+    min-width: 200px 
 
     @media (max-width: 1024px)
         width: 300px
@@ -84,6 +93,9 @@
 
 .Links
     width: 190px
+    box-sizing: border-box    
+    flex: 1 1 auto            
+    min-width: 200px 
 
     @media (max-width: 1024px)
         width: 160px
@@ -120,6 +132,9 @@
 
 .Support
     width: 116px
+    box-sizing: border-box    
+    flex: 1 1 auto            
+    min-width: 200px 
 
     @media (max-width: 1024px)
         width: 140px
@@ -154,6 +169,9 @@
 
 .Contact-Us
     width: 203px
+    box-sizing: border-box    
+    flex: 1 1 auto            
+    min-width: 200px 
 
     @media (max-width: 1024px)
         width: 180px

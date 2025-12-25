@@ -1,13 +1,14 @@
 .baner
     max-width: 1440px
+    width: 100%
     position: relative
     margin: 0 auto
+    overflow: hidden
 
     @media (max-width: 1024px)
-        height: 500px
-        padding: 40px
+        padding: 0 
+
     @media (max-width: 768px)
-        height: auto
         padding: 70px 20px
         background: rgba(236, 244, 255, 1)
 
@@ -18,53 +19,72 @@
     background-position: center
     background-repeat: no-repeat
 
+    @media (max-width: 1024px)
+        height: 500px
+
     @media (max-width: 768px)
         display: none
 
 .baner-content 
     width: 100%
+    max-width: 1000px
     position: absolute
     display: flex
     justify-content: center
     align-items: center
     flex-direction: column
-    padding: 13px 7.5px
-    top: 32%
-    left: 48.5%
+    gap: 82px
+    margin: 0 auto
+    top: 40%
+    left: 48%
     transform: translate(-50%, -50%)
     text-align: center
     color: #fff
 
+    @media (max-width: 768px)
+        position: static
+        transform: none
+        color: #000
+        gap: 32px
+
 .text-box
-    width: 973px
+    max-width: 973px
+    width: 100%
     display: flex
+    flex-direction: column
     justify-content: center
     align-items: center
-    flex-direction: column
     gap: 24px
+    padding: 0 16px
 
     h1
-        width: 986px
         font-size: 56px
         line-height: 73px
+        text-align: center
+
+        @media (max-width: 1024px)
+            font-size: 42px
+            line-height: 56px
+
+        @media (max-width: 768px)
+            font-size: 32px
+            line-height: 44px
    
 
     p
-        width: 867px
         font-size: 16px
         line-height: 155%
+        text-align: center
+
+        @media (max-width: 768px)
+            font-size: 15px
 
 
 .btn 
-    position: absolute
-    top: 47%
-    left: 44%
-    max-width: 175px
     background: rgba(79, 136, 217, 1)
     color:  rgba(255, 255, 255, 1)
     font-size: 16px
-    line-height: 24px
-    padding: 16px 30px 16px 30px
+    padding: 16px 30px 
     border: none
     border-radius: 6px
     cursor: pointer
@@ -151,14 +171,16 @@
 /*-----sectin2-----*/
 
 .banner2
+    width: 100% 
     max-width: 1152px
-    margin-top: 134px
+    margin-top: 134px  
     border: 1px solid blue
+    box-sizing: border-box
 
 .about
     display: flex
     gap: 38px
-    align-items: center
+    align-items: stretch
     flex-wrap: nowrap
 
     @media (max-width: 1024px)
@@ -166,7 +188,7 @@
 
     @media (max-width: 768px)
         flex-direction: column
-        flex-wrap: nowrap
+        align-items: center  
         gap: 40px
 
 
@@ -241,18 +263,24 @@
 
 .about-right
     flex: 1
+    width: 100%
+    max-width: 595px  
     position: relative
-    max-width: 595px
     object-fit: contain
+    display: flex         
+    justify-content: center
+    align-items: stretch
 
     @media (max-width: 768px)
         max-width: 100%
+        width: 100%  
         order: 1
 
     .image1
         width: 100%
         max-width: 595px
-        height: 433px
+        height: 100% 
+        object-fit: cover
         background-image: url("../images/home/course.png")
         background-size: cover
         background-position: center
@@ -261,6 +289,7 @@
 
         @media (max-width: 768px)
             height: 320px
+            max-width: 100%
 
         @media (max-width: 360px)
             height: 240px
@@ -270,8 +299,8 @@
         position: absolute
         width: 80px
         height: 80px
-        top: 40%
-        left: 43%
+        top: 50%                // top 40% -> 50% борборго тууралоо
+        left: 50%
         transform: translate(-50%, -50%)
         z-index: 2
 
@@ -380,28 +409,19 @@
 .couese
     width: 100%
     background: rgba(211, 229, 254, 1)
-    display: flex
-    flex-direction: column
-    justify-content: center
-    align-items: center
-
-    @media (max-width: 1024px)
-        padding: 50px 20px 140px
+    
     @media (max-width: 768px)
-        padding: 62px 20px 120px
         background: none
-    @media (max-width: 360px)
-        padding: 64px 20px 80px
         
 
 
     .container
         width: 100%
         max-width: 1144px
+        margin: 0 auto
         display: flex
         flex-direction: column
         gap: 48px
-        box-sizing: border-box
         
         @media (max-width: 768px)
             padding: 62px 20px 120px
@@ -445,17 +465,18 @@
 .couese-grid
     display: grid
     grid-template-columns: repeat(3, 1fr)  
-    gap: 23px  
+    gap: 24px  
 
     @media (max-width: 1024px)
         grid-template-columns: repeat(2, 1fr)
-        gap: 20px
+        gap: 30px
     @media (max-width: 768px)
         grid-template-columns: 1fr
-        gap: 16px
+        gap: 30px
+        justify-items: center
     @media (max-width: 360px)
         grid-template-columns: 1fr
-        gap: 10px
+        gap: 30px
 
 
 .couese-card
@@ -464,6 +485,9 @@
     padding: 24px
     border-radius: 6px
     background: rgba(255, 255, 255, 1)
+
+    @media (max-width: 768px)
+        padding: 15px
     
     &:nth-child(3)
         background: rgba(227, 250, 255, 1)
@@ -491,8 +515,10 @@
 
         @media (max-width: 768px)
             height: 220px
+            width: 100%
         @media (max-width: 360px)
             height: 180px 
+            width: 100%
 
 
 
@@ -583,10 +609,6 @@
         padding: 60px 20px
 
 
-
-  
-
-
 .event-header
     max-width: 520px
     margin: 0 auto 48px
@@ -644,6 +666,22 @@
     @media (max-width: 360px)
         margin: 0
 
+    &:nth-child(1)
+        background: rgba(136, 177, 235, 1)
+
+    &:nth-child(2)
+        background: rgba(161, 212, 156, 1)
+
+    &:nth-child(3)
+        background: rgba(236, 127, 127, 1)
+
+    @media (max-width: 768px)
+        &:nth-child(1),
+        &:nth-child(2),
+        &:nth-child(3)
+            background: none
+
+
 .event-image
     position: relative
     border-radius: 6px 6px 0px 0px
@@ -685,13 +723,50 @@
         font-size: 14px
 
 
+.event-card.blue .event-badge
+    background: rgba(136, 177, 235, 1)
+
+.event-card.green .event-badge
+    background: rgba(161, 212, 156, 1)
+
+.event-card.red .event-badge
+    background: rgba(236, 127, 127, 1)
+
+    @media (max-width: 768px)
+        &:nth-child(1),
+        &:nth-child(2),
+        &:nth-child(3)
+            background: rgba(8, 108, 249, 1)
+    
+
+
+
 .event-body
-    width: 319px
+    max-width: 319px
+    width: 100%
     padding: 0
     margin: 24px 24px 32px
     display: flex
     flex-direction: column
     gap: 20px
+
+    @media (max-width: 768px)
+        max-width: 100%
+        margin-left: 16px
+        margin-right: 16px
+
+        &::before
+            content: "TED Talks at UCF College of Education"
+            font-size: 18px
+            line-height: 26px
+            color: rgba(34, 34, 34, 1)
+            font-weight: 600
+
+    @media (max-width: 360px)
+        &::before
+            font-size: 16px
+            line-height: 22px
+             
 
 
     h5
@@ -701,17 +776,25 @@
 
         @media (max-width: 768px)
             font-size: 18px
+            display: none
         @media (max-width: 360px)
             font-size: 16px
+            display: none
+
 
 .event-meta
-    width: 321px
+    max-width: 321px
+    width: 100%
     display: flex
     justify-content: space-between
     font-size: 13px
     color: #555
-    gap: 29px
-    
+    gap: 16px
+    flex-wrap: wrap 
+
+    @media (max-width: 768px)
+        max-width: 100%
+        gap: 12px
 
     span
         display: flex
@@ -720,6 +803,9 @@
         line-height: 155%
         color: rgba(85, 85, 85, 1)
 
+        @media (max-width: 768px)
+            font-size: 12px
+            
 
         img
             width: 16px
